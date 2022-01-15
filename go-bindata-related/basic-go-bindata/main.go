@@ -4,10 +4,10 @@ import (
 	"log"
 	"net/http"
 
-	"solution-embed/assets"
+	"solution-embed/pkg/assets"
 )
 
-//go:generate go-bindata -fs -o=assets/assets.go -pkg=assets ./assets
+//go:generate go-bindata -fs -o=pkg/assets/assets.go -pkg=assets ./assets
 
 func main() {
 	mutex := http.NewServeMux()
